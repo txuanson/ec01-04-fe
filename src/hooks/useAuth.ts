@@ -1,6 +1,5 @@
-import { useSelector } from 'react-redux';
-import { IAuth } from '@/redux/reducer/auth.slice';
+import useAppSelector from "./useAppSelector";
 
 export default function useAuth() {
-  return useSelector((state: { auth: IAuth }) => state.auth.isLoggedIn)
+  return useAppSelector((state) => state.auth.isLoggedIn)
 }

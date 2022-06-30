@@ -1,9 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from 'pages/homePage';
+import MainLayout from './components/layout/MainLayout';
+import Login from './pages/Login';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <Home/>
+    <MainLayout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />}>
+            
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </MainLayout>
   );
 }
 export default App;
