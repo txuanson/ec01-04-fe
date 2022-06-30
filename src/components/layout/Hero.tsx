@@ -1,5 +1,7 @@
 // create a hero banner has a full page image with text in the center
-import "./app.css"
+import "./app.css";
+import React from "react";
+
 const Hero = () => {
     return (
         <div className="hero-image">

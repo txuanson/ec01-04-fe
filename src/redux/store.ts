@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import {
   persistStore,
   persistReducer,
@@ -13,7 +13,7 @@ import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 import authSlice from "./reducer/auth.slice";
 
-const reducers = combineReducers({
+const rootReducer = combineReducers({
   auth: authSlice
 })
 
@@ -23,7 +23,7 @@ const persistConfig = {
   storage
 }
 
-const persistedReducer = persistReducer(persistConfig, reducers)
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 const store = configureStore({
   reducer: persistedReducer,
@@ -32,9 +32,13 @@ const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    })
 });
 
 const persistor = persistStore(store)
+
+export type RootState = ReturnType<typeof rootReducer>
+export type AppDispatch = typeof store.dispatch
+export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, Action<string>>;
 
 export { store, persistor };
