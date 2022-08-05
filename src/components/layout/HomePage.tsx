@@ -1,9 +1,8 @@
 import React from "react";
-import Category from "./Category";
 import Header2 from "./Header2";
+import Category from "./Category";
 import Brand from "./Brand";
-import BestSeller from "./BestSeller";
-import Group from "./Group";
+import Products from "./Products";
 
 export default function HomePage() {
   return (
@@ -11,8 +10,7 @@ export default function HomePage() {
       <Header2 />
       <Category />
       <Brand />
-      <BestSeller />
-      <Group />
+      <Products />
     </>
   );
 }
