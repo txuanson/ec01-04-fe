@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./app.css";
 
+function BrandItem(props) {
+  return (
+    <>
+      <div className="brand-item">
+        <div className="brand-img">{props.item.img}</div>
+        <div className="brand-name">{props.item.name}</div>
+      </div>
+    </>
+  );
+}
+
 function Brand() {
+  const [brands, setBrands] = useState([
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+    { name: "Brand name", img: "", describe: "" },
+  ]);
   return (
     <>
       <div className="body bg-grey-100">
@@ -19,85 +48,10 @@ function Brand() {
           </div>
 
           <div className="section-content">
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-            </div>
-            <div className="col-item">
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
-              <div className="brand-item">
-                <div className="brand-img"></div>
-                <div className="brand-name">Brand name</div>
-              </div>
+            <div className="brand-container">
+              {brands.map((brand) => (
+                <BrandItem item={brand} />
+              ))}
             </div>
           </div>
 

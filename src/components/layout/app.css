@@ -107,7 +107,9 @@
 
 .body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -236,21 +238,18 @@
 }
 .sub-category-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 10px;
   width: 380px;
   height: 158px;
+
+  flex-wrap: wrap;
 }
-.sub-category-col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.sub-category-container {
   padding: 0px;
-  gap: 10px;
   width: 185px;
-  height: 158px;
 }
 
 .menu-bar {
@@ -363,6 +362,26 @@
   font-size: 15px;
   line-height: 20px;
 }
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: relative;
+  width: inherit;
+  overflow: hidden;
+}
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  width: inherit;
+  height: 376px;
+  flex-wrap: wrap;
+}
 .brand-item {
   box-sizing: border-box;
   display: flex;
@@ -402,17 +421,7 @@
   text-align: center;
   color: #151515;
 }
-.section-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 32px;
-  position: relative;
-  width: inherit;
-  overflow: hidden;
-}
-.fav-header {
+.group-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -421,7 +430,7 @@
   padding: 0px;
   width: 1170px;
 }
-.fav-title {
+.group-title {
   font-family: "Coiny";
   font-style: normal;
   font-weight: 400;
@@ -431,7 +440,7 @@
   align-items: center;
   text-align: center;
 }
-.fav-subtitle {
+.group-subtitle {
   font-family: "Coiny";
   font-style: normal;
   font-weight: 400;
@@ -441,7 +450,7 @@
   align-items: center;
   text-align: center;
 }
-.fav-line {
+.group-line {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -459,7 +468,7 @@
   width: 30px;
   height: 30px;
 }
-.fav-content {
+.group-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -468,7 +477,7 @@
   width: 1170px;
   height: 269px;
 }
-.fav-item {
+.group-item {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -558,7 +567,7 @@
   font-size: 12px;
   line-height: 18px;
 }
-.fav-more {
+.group-more {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -570,7 +579,7 @@
   height: 269px;
   border-radius: 12px;
 }
-.fav-btn {
+.group-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
