@@ -4,7 +4,7 @@ import "./app.css";
 function Title(props) {
   return (
     <>
-      <button type="button" className="category-item category-item-title">
+      <button type="button" className="category-btn bd-rd-12">
         {props.cate.title}
       </button>
     </>
@@ -14,14 +14,14 @@ function Title(props) {
 function SubCategory(props) {
   return (
     <>
-      <div className="sub-category">
-        <button type="button" className="sub-title">
+      <div className="pet-category flex-col content-center">
+        <button type="button" className="pet-btn content-center bd-rd-12">
           {props.pet.title}
         </button>
 
-        <div className="sub-category-row">
+        <div className="pet-sub-category flex-col">
           {props.pet.sub.map((SubCate) => (
-            <div className="sub-category-container">
+            <div className="pet-sub-container">
               <Title cate={SubCate} />
             </div>
           ))}
@@ -90,20 +90,20 @@ function Category() {
   return (
     <>
       <div className="body bg-grey-100">
-        <div className="container row-item category bg-white-100">
-          <div className="heading">
-            <div className="section-title text-black-100">
-              Danh mục sản phẩm
+        <div className="container category flex-row content-center bg-white-100">
+          <div className="section heading-category">
+            <div className="section-header">
+              <div className="section-title">Danh mục sản phẩm</div>
             </div>
 
-            <div className="heading-category">
+            <div className="section-content heading-category flex-col">
               {categories.map((Cate) => (
                 <Title cate={Cate} />
               ))}
             </div>
           </div>
 
-          <div className="sub bg-pink-25">
+          <div className="sub-category flex-row content-center bg-pink-25 bd-rd-12">
             {categories[2].sub.map((Accessory) => (
               <SubCategory pet={Accessory} />
             ))}
