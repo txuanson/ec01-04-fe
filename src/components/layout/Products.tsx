@@ -6,9 +6,9 @@ import logopaws from "../../assets/EC01-04-logo-paws.png";
 function Product(props) {
   return (
     <>
-      <div className="group-item">
-        <div className="product-img">
-          <div className="discount-tag bg-pink-30">
+      <div className="product-item bd-rd-12">
+        <div className="product-img bd-rd-12">
+          <div className="discount-tag bg-pink-30 bd-rd-12">
             <div className="discount text-pink-100">{props.item.discount}</div>
           </div>
         </div>
@@ -30,7 +30,8 @@ function Product(props) {
 function ListProduct(props) {
   const [products, setProduct] = useState([
     {
-      title: "Product Title",
+      title:
+        "Một cái tên sản phẩm thiệt là siêu dài to bự khổng lồ để test giao diện nhe",
       img: "",
       discount: "",
       rating: "",
@@ -69,34 +70,40 @@ function ListProduct(props) {
       sale_price: "95.000 đ",
       cost_price: "",
     },
+    {
+      title: "Product Title",
+      img: "",
+      discount: "",
+      rating: "",
+      sale_price: "95.000 đ",
+      cost_price: "",
+    },
   ]);
 
   return (
     <>
-      <div className="group-header">
-        <div className="group-title text-pink-100">{props.group.title}</div>
-        <div className="group-subtitle text-pink-100">
-          {props.group.subtitle}
-        </div>
-        <div className="group-line">
-          <div className="line" />
-          <img src={logopaws} alt="logo" className="logo-paws" />
-          <div className="line" />
-        </div>
-      </div>
-
-      <div className="group-content">
-        {products.map((product) => (
-          <Product item={product} />
-        ))}
-
-        <div className="group-more">
+      <div className="section brand">
+        <div className="group-header">
+          <div className="group-title text-pink-100">{props.group.title}</div>
+          <div className="group-subtitle text-pink-100">
+            {props.group.subtitle}
+          </div>
+          <div className="group-line">
+            <div className="line" />
+            <img src={logopaws} alt="logo" className="logo-paws" />
+            <div className="line" />
+          </div>
           <button
             type="button"
-            className="group-btn bg-pink-30 section-btn-title text-black-100"
+            className="group-btn bg-pink-30 text-black-100 bd-rd-12"
           >
             Xem tất cả
           </button>
+        </div>
+        <div className="group-content">
+          {products.map((product) => (
+            <Product item={product} />
+          ))}
         </div>
       </div>
     </>
@@ -129,12 +136,12 @@ function GroupProducts() {
   return (
     <>
       <div className="body bg-grey-100">
-        <div className="container brand col-item bg-pink-30">
+        <div className="container content-center bg-pink-30">
           <ListProduct group={bestSeller} />
         </div>
 
         {groupProduct.map((product) => (
-          <div className="container brand col-item bg-white-100">
+          <div className="container content-center bg-white-100">
             <ListProduct group={product} />
           </div>
         ))}

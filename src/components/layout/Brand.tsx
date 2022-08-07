@@ -4,8 +4,8 @@ import "./app.css";
 function BrandItem(props) {
   return (
     <>
-      <div className="brand-item">
-        <div className="brand-img">{props.item.img}</div>
+      <div className="brand-item bd-rd-12">
+        <div className="brand-img bd-rd-12">{props.item.img}</div>
         <div className="brand-name">{props.item.name}</div>
       </div>
     </>
@@ -34,29 +34,22 @@ function Brand() {
   return (
     <>
       <div className="body bg-grey-100">
-        <div className="container brand col-item bg-white-100">
-          <div className="section-header">
-            <div className="section-title text-black-100">
-              Thương hiệu đối tác
+        <div className="container content-center bg-white-100">
+          <div className="section brand">
+            <div className="section-header">
+              <div className="section-title">Thương hiệu đối tác</div>
+              <button type="button" className="section-btn bg-white-100">
+                Xem tất cả
+              </button>
             </div>
-            <button
-              type="button"
-              className="section-btn bg-white-100 section-btn-title text-black-100"
-            >
-              Xem tất cả
-            </button>
-          </div>
 
-          <div className="section-content">
-            <div className="brand-container">
-              {brands.map((brand) => (
-                <BrandItem item={brand} />
-              ))}
+            <div className="section-content">
+              <div className="brand-container flex-col">
+                {brands.map((brand) => (
+                  <BrandItem item={brand} />
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div className="arrow">
-            <div className="base-arrow"></div>
           </div>
         </div>
       </div>
