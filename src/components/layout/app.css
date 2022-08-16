@@ -104,6 +104,9 @@
 .bd-1-grey {
   border: 1px solid #d1d1d1;
 }
+.bd-1-pink {
+  border: 1px solid #d9adad;
+}
 .bd-rd-12 {
   border-radius: 12px;
 }
@@ -276,14 +279,35 @@
   padding: 16px 0px;
   gap: 8px;
 }
-
-.ic-social {
-  width: 30px;
-  height: 30px;
+.authen {
+  padding: 45px 60px;
+}
+.auth-group {
+  display: flex;
+  gap: 8px;
+}
+.auth-btn-group {
+  display: flex;
+  gap: 5px;
+}
+.auth-social-group {
+  display: flex;
+  gap: 15px;
+}
+.auth-textbox {
+  width: 400px;
+  border-radius: 12px;
+  padding: 8px 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: large;
+}
+.auth-bottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.auth-other-group {
+  gap: 5px;
 }
 .account-btn {
   font-family: "Open Sans";
@@ -298,6 +322,10 @@
   width: 229px;
   height: 100px;
 }
+.logo-white {
+  width: 400px;
+  height: 460px;
+}
 .search-text {
   width: 400px;
 }
@@ -311,6 +339,14 @@
 .ic-acc-cart {
   width: 25px;
   height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+.ic-password {
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -422,6 +458,10 @@
 .line {
   width: 100px;
   border: 2px solid #d9adad;
+}
+.auth-line {
+  width: 180px;
+  border: 1px solid #d9adad;
 }
 .logo-paws {
   width: 30px;
@@ -618,5 +658,76 @@
   font-weight: 400;
   font-size: 14px;
   color: #838383;
+  text-align: center;
+}
+.auth-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.auth-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+}
+.auth-subtitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.auth-box {
+  display: flex;
+  align-items: center;
+  padding: 30px 50px;
+  gap: 25px;
+  width: 500px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.auth-btn {
+  position: relative;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  white-space: nowrap;
+  padding: 8px 0px;
+}
+.auth-bottom-btn {
+  position: relative;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  white-space: nowrap;
+  padding: 0px 12px;
+}
+.auth-social-btn {
+  position: relative;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  white-space: nowrap;
+  padding: 5px 20px;
+  gap: 8px;
+}
+.auth-other {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
   text-align: center;
 }
