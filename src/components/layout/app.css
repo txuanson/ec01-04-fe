@@ -186,6 +186,18 @@
   padding: 8.75px 0px;
   gap: 40px;
 }
+.account-cart {
+  padding: 5px 0px;
+  gap: 45px;
+}
+.search-bar {
+  width: 500px;
+  height: 42px;
+  border-radius: 12px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
 .menu-bar {
   padding: 0px;
   gap: 50px;
@@ -260,10 +272,18 @@
   width: 282px;
   gap: 15px;
 }
+.navigation {
+  padding: 16px 0px;
+  gap: 8px;
+}
 
 .ic-social {
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
 }
 .account-btn {
   font-family: "Open Sans";
@@ -277,6 +297,24 @@
 .logo-full {
   width: 229px;
   height: 100px;
+}
+.search-text {
+  width: 400px;
+}
+.ic-search {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ic-acc-cart {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
 }
 .menu-btn {
   font-family: "Open Sans";
@@ -343,7 +381,7 @@
   background: #f9f9f9;
 }
 .brand-name {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -437,7 +475,7 @@
   gap: 2px;
 }
 .product-title {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -450,13 +488,13 @@
   text-overflow: ellipsis;
 }
 .sale-price {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
 }
 .cost-price {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 275;
   font-size: 12px;
@@ -474,7 +512,7 @@
   position: relative;
   left: 10px;
   top: 10px;
-  font-family: "Poppins";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
