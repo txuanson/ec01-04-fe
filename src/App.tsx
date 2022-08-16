@@ -2,6 +2,7 @@ import React from "react";
 import MainLayout from "./components/layout/MainLayout";
 import Login from "./pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Authen from "./pages/Authen";
 import HomePage from "./pages/HomePage";
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     //     </Routes>
     //   </BrowserRouter>
     // </MainLayout>
-    <HomePage></HomePage>
+    <Authen></Authen>
+    // <HomePage></HomePage>
   );
 }
 export default App;
