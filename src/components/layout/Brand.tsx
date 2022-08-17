@@ -4,10 +4,10 @@ import "./app.css";
 function BrandItem(props) {
   return (
     <>
-      <div className="brand-item bd-rd-12">
+      <a href="" className="brand-item bd-rd-12">
         <div className="brand-img bd-rd-12">{props.item.img}</div>
         <div className="brand-name">{props.item.name}</div>
-      </div>
+      </a>
     </>
   );
 }

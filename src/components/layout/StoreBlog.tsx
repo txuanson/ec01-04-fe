@@ -21,13 +21,13 @@ function Stores() {
         </div>
 
         <div className="section-content">
-          <div className="store-container flex-col bg-white-100 bd-rd-12">
+          <a href="" className="store-container flex-col bg-white-100 bd-rd-12">
             <div className="store-img bg-grey-100">{store.img}</div>
             <div className="store-content flex-col">
               <div className="store-title">{store.name}</div>
               <div className="store-subtitle">{`Địa chỉ: ${store.address}\nĐiện thoại: ${store.phone}\nThời gian mở cửa: ${store.opening}`}</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </>
@@ -37,13 +37,13 @@ function Stores() {
 function Article(props) {
   return (
     <>
-      <div className="blog-container flex-col bg-white-100 bd-rd-12">
+      <a href="" className="blog-container flex-col bg-white-100 bd-rd-12">
         <div className="blog-img bg-grey-100">{props.article.img}</div>
         <div className="blog-content">
           <div className="blog-title">{props.article.title}</div>
           <div className="blog-subtitle">{props.article.subtitle}</div>
         </div>
-      </div>
+      </a>
     </>
   );
 }

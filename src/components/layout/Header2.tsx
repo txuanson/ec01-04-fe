@@ -7,37 +7,34 @@ function Header2() {
     <>
       <div className="body bg-pink-100">
         <div className="container flex-row space-between">
-          <div className="flex-row social-media">
-            <a href="#">
+          <div className="flex-row">
+            <button className="social-btn">
               <i
-                className="fa fa-facebook ic-social text-white-100"
+                className="fa fa-facebook text-white-100"
                 aria-hidden="true"
               ></i>
-            </a>
-            <a href="#">
+            </button>
+            <button className="social-btn">
               <i
-                className="fa fa-instagram ic-social text-white-100"
+                className="fa fa-instagram text-white-100"
                 aria-hidden="true"
               ></i>
-            </a>
-            <a href="#">
+            </button>
+            <button className="social-btn">
               <i
-                className="fa fa-twitter ic-social text-white-100"
+                className="fa fa-twitter text-white-100"
                 aria-hidden="true"
               ></i>
-            </a>
-            <a href="#">
+            </button>
+            <button className="social-btn">
               <i
-                className="fa fa-youtube-play ic-social text-white-100"
+                className="fa fa-youtube-play text-white-100"
                 aria-hidden="true"
               ></i>
-            </a>
-            <a href="#">
-              <i
-                className="fa fa-phone ic-social text-white-100"
-                aria-hidden="true"
-              ></i>
-            </a>
+            </button>
+            <button className="social-btn">
+              <i className="fa fa-phone text-white-100" aria-hidden="true"></i>
+            </button>
           </div>
 
           <div className="flex-row account">

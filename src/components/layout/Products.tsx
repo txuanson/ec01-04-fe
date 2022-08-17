@@ -6,7 +6,7 @@ import logopaws from "../../assets/EC01-04-logo-paws.png";
 function Product(props) {
   return (
     <>
-      <div className="product-item bd-rd-12">
+      <a href="" className="product-item bd-rd-12">
         <div className="product-img bd-rd-12">
           <div className="discount-tag bg-pink-30 bd-rd-12">
             <div className="discount text-pink-100">{props.item.discount}</div>
@@ -22,7 +22,7 @@ function Product(props) {
             {props.item.cost_price}
           </div>
         </div>
-      </div>
+      </a>
     </>
   );
 }
