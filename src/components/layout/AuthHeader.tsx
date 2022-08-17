@@ -12,12 +12,12 @@ function AuthHeader() {
           </a>
 
           <div className="flex-col auth-header">
-            <div className="auth-title text-black-100">Đăng nhập</div>
-            <a href="#">
-              <div className="auth-subtitle text-pink-100">
-                Bạn cần giúp đỡ?
-              </div>
-            </a>
+            <div className="auth-title text-black-100" id="auth-title">
+              Đăng nhập
+            </div>
+            <button className="auth-subtitle text-pink-100">
+              Bạn cần giúp đỡ?
+            </button>
           </div>
         </div>
       </div>
