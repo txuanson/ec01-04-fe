@@ -15,8 +15,9 @@ function App() {
     //     </Routes>
     //   </BrowserRouter>
     // </MainLayout>
-    <Authen></Authen>
-    // <HomePage></HomePage>
+
+    // <Authen></Authen>
+    <HomePage></HomePage>
   );
 }
 export default App;
