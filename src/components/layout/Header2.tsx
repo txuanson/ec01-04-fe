@@ -38,9 +38,11 @@ function Header2() {
           </div>
 
           <div className="flex-row account">
+            <a href="/login">
             <button type="button" className="account-btn">
               Đăng nhập
             </button>
+            </a>
             <button type="button" className="account-btn">
               Đăng ký
             </button>
@@ -50,7 +52,7 @@ function Header2() {
 
       <div className="body bg-white-100">
         <div className="container flex-row space-between">
-          <a href="HomePage">
+          <a href="/">
             <img src={logo} alt="logo" className="logo-full" />
           </a>
 
@@ -61,7 +63,7 @@ function Header2() {
               name=""
               id=""
               aria-describedby="helpId"
-              placeholder="Search Products, categories,..."
+              placeholder="Tìm kiếm sản phẩm, danh mục..."
             />
             <a href="#">
               <i className="fa fa-search ic-search" aria-hidden="true"></i>

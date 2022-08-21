@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainLayout from "./components/layout/MainLayout";
 import Login from "./pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -7,19 +7,20 @@ import HomePage from "./pages/HomePage";
 import ProductsList from "./pages/ProductsList";
 function App() {
   return (
-    // <MainLayout>
-    //   <BrowserRouter>
-    //     <Routes>
-    //       <Route path="/login" element={<Login />}>
-
-    //       </Route>
-    //     </Routes>
-    //   </BrowserRouter>
-    // </MainLayout>
+    <MainLayout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/login" element={<Authen />} />
+          <Route path="/products" element={<ProductsList />} />
+        </Routes>
+      </BrowserRouter>
+    </MainLayout>
 
     // <Authen></Authen>
     // <HomePage></HomePage>
-    <ProductsList></ProductsList>
+    // <ProductsList></ProductsList>
   );
 }
 export default App;

@@ -7,7 +7,7 @@ function AuthHeader() {
     <>
       <div className="body bg-white-100">
         <div className="container flex-row space-between">
-          <a href="HomePage">
+          <a href="/">
             <img src={logo} alt="logo" className="logo-full" />
           </a>
 
