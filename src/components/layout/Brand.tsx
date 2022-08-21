@@ -5,31 +5,31 @@ function BrandItem(props) {
   return (
     <>
       <a href="" className="brand-item bd-rd-12">
-        <div className="brand-img bd-rd-12">{props.item.img}</div>
-        <div className="brand-name">{props.item.name}</div>
+        <div className="brand-img bd-rd-12">{props.item.Logo}</div>
+        <div className="brand-name">{props.item.Name}</div>
       </a>
     </>
   );
 }
 
 function Brand() {
-  const [brands, setBrands] = useState([
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
-    { name: "Brand name", img: "", describe: "" },
+  const [Manufacturer, setManufacturer] = useState([
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
+    { Name: "Brand name", Logo: "" },
   ]);
   return (
     <>
@@ -45,7 +45,7 @@ function Brand() {
 
             <div className="section-content">
               <div className="brand-container flex-col">
-                {brands.map((brand) => (
+                {Manufacturer.map((brand) => (
                   <BrandItem item={brand} />
                 ))}
               </div>

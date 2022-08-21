@@ -75,6 +75,9 @@
 .text-white-100 {
   color: #ffffff;
 }
+.text-yellow-100 {
+  color: #fdbc15;
+}
 
 .bg-gray-50 {
   background: rgba(131, 131, 131, 0.5);
@@ -124,6 +127,49 @@
 }
 .content-center {
   justify-content: center;
+}
+
+.default-btn-agree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  height: 40px;
+  background: #d9adad;
+  border: 2px solid #ad9d9d;
+  border-radius: 12px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+}
+.default-btn-agree:hover {
+  background: rgb(217, 173, 173, 0.5);
+  color: #d9adad;
+}
+.default-btn-disagree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #ad9d9d;
+  border-radius: 12px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #d9adad;
+}
+.default-btn-disagree:hover {
+  background: #d1d1d14d;
+  color: #838383;
 }
 
 .body {
@@ -293,6 +339,78 @@
   display: flex;
   gap: 15px;
 }
+.list-describe {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  gap: 5px;
+}
+.list-sort {
+  padding: 16px 0;
+  width: 1170px;
+}
+.filter-sort {
+  gap: 16px;
+}
+.filter-list {
+  gap: 16px;
+}
+.filter-box {
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+}
+.filter-box-line {
+  margin: 0 10px;
+}
+.filter-box-list {
+  gap: 16px;
+}
+.sort-current {
+  gap: 12px;
+}
+.list-page {
+  gap: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+.page-current {
+  gap: 10px;
+  width: fit-content;
+}
+.list-result {
+  padding: 64px 0;
+  width: 1170px;
+}
+.list-filter {
+  gap: 45px;
+  width: 250px;
+}
+.filter-section {
+  gap: 16px;
+  align-items: flex-start;
+  width: inherit;
+}
+.filter-content {
+  gap: 10px;
+  width: inherit;
+}
+.filter-price {
+  display: flex;
+  align-items: flex-start;
+}
+.list-products {
+  gap: 15px;
+  width: 810px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.pagination {
+  padding: 25px 0;
+  gap: 50px;
+}
+
 .auth-textbox {
   width: 400px;
   border-radius: 12px;
@@ -555,14 +673,6 @@
   font-size: 12px;
   text-decoration-line: line-through;
 }
-.rating {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2px;
-  height: 15px;
-  background: rgb(253, 188, 21, 0.1);
-}
 .discount-tag {
   position: relative;
   left: 10px;
@@ -770,5 +880,197 @@
   font-weight: 700;
 }
 .auth-other button:hover {
+  text-decoration: underline;
+}
+.list-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.list-subtitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  white-space: pre-line;
+}
+.filter-box-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+}
+.filter-box-choose {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 8px;
+}
+.filter-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+.filter-checkbox:hover {
+  background-color: #d1d1d1;
+}
+.filter-checkedbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: 5px solid #151515;
+}
+.sorting {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+.sorting-tag {
+  padding: 0 10px;
+  gap: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+.sorting-tag-close:hover {
+  color: #151515;
+}
+.list-current {
+  gap: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.list-result-tag {
+  padding: 0 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+.page-number {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  gap: 5px;
+}
+.page-move {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  background: #d9adad;
+  border: 2px solid #ad9d9d;
+  border-radius: 12px;
+}
+.page-move:hover {
+  background: #d1d1d1;
+}
+.filter-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.filter-item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.filter-item:hover {
+  color: #d9adad;
+}
+.filter-item-tag {
+  padding: 0 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+.filter-item-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.filter-item-checkbox:hover {
+  background-color: #d9adad33;
+}
+.filter-item-checkedbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.rating-star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+.filter-textbox-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+.filter-textbox {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-textbox-content {
+  width: 85px;
+}
+.price-btn {
+  width: inherit;
+  align-items: center;
+}
+.btn-buynow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  height: 30px;
+  background: #d9adad;
+  border: 2px solid #ad9d9d;
+  border-radius: 12px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+}
+.btn-buynow:hover {
+  background: rgb(217, 173, 173, 0.1);
+  color: #d9adad;
+}
+.page-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #838383;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-btn:hover {
   text-decoration: underline;
 }

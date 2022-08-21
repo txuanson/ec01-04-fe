@@ -54,9 +54,6 @@ function Footer2() {
                 <a className="footer-subtitle" href="#">
                   Huimitu tại Hải Phòng
                 </a>
-                <a className="footer-subtitle" href="#">
-                  Huimitu tại Cần Thơ
-                </a>
               </div>
 
               <div className="footer-col">
