@@ -90,9 +90,9 @@ function SignupBox() {
               id=""
               placeholder="Mật khẩu"
             />
-            <a href="#">
+            <button>
               <i className="fa fa-eye" aria-hidden="true"></i>
-            </a>
+            </button>
           </div>
         </div>
         <div className="auth-btn-group flex-col">

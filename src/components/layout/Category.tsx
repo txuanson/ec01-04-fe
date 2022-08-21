@@ -5,7 +5,7 @@ function Title(props) {
   return (
     <>
       <button type="button" className="category-btn bd-rd-12">
-        {props.cate.title}
+        {props.cate.Name}
       </button>
     </>
   );
@@ -16,11 +16,11 @@ function SubCategory(props) {
     <>
       <div className="pet-category flex-col content-center">
         <button type="button" className="pet-btn content-center bd-rd-12">
-          {props.pet.title}
+          {props.pet.Name}
         </button>
 
         <div className="pet-sub-category flex-col">
-          {props.pet.sub.map((SubCate) => (
+          {props.pet.Child.map((SubCate) => (
             <div className="pet-sub-container">
               <Title cate={SubCate} />
             </div>
@@ -34,56 +34,56 @@ function SubCategory(props) {
 function Category() {
   const [categories, setCategories] = useState([
     {
-      title: "Thức ăn, dinh dưỡng",
-      describe: "",
-      sub: [],
+      Name: "Thức ăn, dinh dưỡng",
+      Desc: "",
+      Child: [],
     },
     {
-      title: "Vệ sinh, chăm sóc",
-      describe: "",
-      sub: [],
+      Name: "Vệ sinh, chăm sóc",
+      Desc: "",
+      Child: [],
     },
     {
-      title: "Đồ dùng, phụ kiện",
-      describe: "",
-      sub: [
+      Name: "Đồ dùng, phụ kiện",
+      Desc: "",
+      Child: [
         {
-          title: "Phụ kiện cho chó",
-          describe: "",
-          sub: [
-            { title: "Quần áo & Mũ nón", describe: "" },
-            { title: "Vòng cổ & Dây dắt", describe: "" },
-            { title: "Rọ mõm", describe: "" },
-            { title: "Đồ chơi & Huấn luyện", describe: "" },
-            { title: "Địu chó", describe: "" },
-            { title: "Túi xách chó", describe: "" },
-            { title: "Balo đựng chó", describe: "" },
-            { title: "Lồng vận chuyển", describe: "" },
+          Name: "Phụ kiện cho chó",
+          Desc: "",
+          Child: [
+            { Name: "Quần áo & Mũ nón", Desc: "" },
+            { Name: "Vòng cổ & Dây dắt", Desc: "" },
+            { Name: "Rọ mõm", Desc: "" },
+            { Name: "Đồ chơi & Huấn luyện", Desc: "" },
+            { Name: "Địu chó", Desc: "" },
+            { Name: "Túi xách chó", Desc: "" },
+            { Name: "Balo đựng chó", Desc: "" },
+            { Name: "Lồng vận chuyển", Desc: "" },
           ],
         },
         {
-          title: "Phụ kiện cho mèo",
-          describe: "",
-          sub: [
-            { title: "Quần áo & Trang sức", describe: "" },
-            { title: "Vòng cổ & Dây dắt", describe: "" },
-            { title: "Đồ chơi & Huấn luyện", describe: "" },
-            { title: "Túi xách mèo", describe: "" },
-            { title: "Balo đựng mèo", describe: "" },
-            { title: "Lồng vận chuyển", describe: "" },
+          Name: "Phụ kiện cho mèo",
+          Desc: "",
+          Child: [
+            { Name: "Quần áo & Trang sức", Desc: "" },
+            { Name: "Vòng cổ & Dây dắt", Desc: "" },
+            { Name: "Đồ chơi & Huấn luyện", Desc: "" },
+            { Name: "Túi xách mèo", Desc: "" },
+            { Name: "Balo đựng mèo", Desc: "" },
+            { Name: "Lồng vận chuyển", Desc: "" },
           ],
         },
       ],
     },
     {
-      title: "Nhà, chuồng, nệm",
-      describe: "",
-      sub: [],
+      Name: "Nhà, chuồng, nệm",
+      Desc: "",
+      Child: [],
     },
     {
-      title: "Thuốc thú y",
-      describe: "",
-      sub: [],
+      Name: "Thuốc thú y",
+      Desc: "",
+      Child: [],
     },
   ]);
 
@@ -104,7 +104,7 @@ function Category() {
           </div>
 
           <div className="sub-category flex-row content-center bg-pink-25 bd-rd-12">
-            {categories[2].sub.map((Accessory) => (
+            {categories[2].Child.map((Accessory) => (
               <SubCategory pet={Accessory} />
             ))}
           </div>

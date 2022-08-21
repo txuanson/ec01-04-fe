@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Authen from "./pages/Authen";
 import HomePage from "./pages/HomePage";
+import ProductsList from "./pages/ProductsList";
 function App() {
   return (
     // <MainLayout>
@@ -17,7 +18,8 @@ function App() {
     // </MainLayout>
 
     // <Authen></Authen>
-    <HomePage></HomePage>
+    // <HomePage></HomePage>
+    <ProductsList></ProductsList>
   );
 }
 export default App;
