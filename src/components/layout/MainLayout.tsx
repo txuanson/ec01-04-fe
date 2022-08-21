@@ -1,15 +1,14 @@
 import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
+import Footer2 from './Footer2'
+import Header2 from './Header2'
 import Hero from './Hero'
 
 export default function MainLayout({ children }) {
   return (
     <>
-      <Header />
+      {/* <Header2 /> */}
       {children}
-      <Hero />
-      <Footer />
+      <Footer2 />
     </>
   )
 }

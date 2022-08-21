@@ -11,7 +11,7 @@ export default function Authen() {
       <AuthContent />
 
       <Banner />
-      <Footer2 />
+      {/* <Footer2 /> */}
     </>
   );
 }

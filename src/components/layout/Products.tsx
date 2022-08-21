@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./app.css";
 import logopaws from "../../assets/EC01-04-logo-paws.png";
@@ -111,6 +111,7 @@ function ListProduct(props) {
 
 function GroupProducts() {
   const [bestSeller, setBestSeller] = useState({
+    //Đang đợi API best seller
     title: "SẢN PHẨM BÁN CHẠY",
     subtitle: "",
   });
@@ -131,7 +132,6 @@ function GroupProducts() {
         "Các loại quần áo cute phô mai que giúp Boss trở nên thời thượng hơn",
     },
   ]);
-
   return (
     <>
       <div className="body bg-grey-100">

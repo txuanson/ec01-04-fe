@@ -12,15 +12,14 @@ export default function HomePage() {
   return (
     <>
       <Header2 />
-      <Navigation />
-
+      {/* <Navigation /> */}
       <Category />
       <Brand />
       <Products />
       <StoreBlog />
       <Banner />
 
-      <Footer2 />
+      {/* <Footer2 /> */}
     </>
   );
 }

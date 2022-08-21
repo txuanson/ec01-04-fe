@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./app.css";
 
 function Title(props) {
@@ -86,7 +86,15 @@ function Category() {
       Child: [],
     },
   ]);
-
+  // const getCategories = async () => {
+  //   const res = await fetch("https://ec01-04-be.herokuapp.com/category");
+  //   const data = await res.json();
+  //   //setCategories(data);
+  //   console.log(data);
+  // }
+  // useEffect(() => {
+  //   getCategories();
+  // } , []);
   return (
     <>
       <div className="body bg-grey-100">
