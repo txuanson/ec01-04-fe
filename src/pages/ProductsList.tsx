@@ -17,8 +17,6 @@ export default function HomePage() {
       <ListSort />
       <ListResult />
       <Pagination />
-
-      <Footer2 />
     </>
   );
 }

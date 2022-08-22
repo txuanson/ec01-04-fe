@@ -7,14 +7,15 @@ function Product(props) {
   return (
     <>
       <a href="" className="product-item bd-rd-12">
-        <div className="product-img bd-rd-12">
+        <div className="product-img bg-rd-12">
+          <img src={props.item.mPhotos}></img>
           <div className="discount-tag bg-pink-30 bd-rd-12">
-            <div className="discount text-pink-100">{props.item.discount}</div>
+            <div className="text-pink-100">{props.item.discount}</div>
           </div>
         </div>
         <div className="product-content">
-          <div className="product-title text-black-100">{props.item.Name}</div>
-          <div className="rating">{props.item.AvgRating}</div>
+          <div className="product-title text-black-100">{props.item.mName}</div>
+          <div className="rating">{props.item.mAvgRating}</div>
           <div className="sale-price text-black-100">
             {props.item.sale_price}
           </div>
@@ -30,50 +31,50 @@ function Product(props) {
 function ListProduct(props) {
   const [products, setProduct] = useState([
     {
-      Name: "Một cái tên sản phẩm thiệt là siêu dài to bự khổng lồ để test giao diện nhe",
-      Photo: "",
+      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
+      mPhotos: "",
       discount: "",
-      AvgRating: "",
+      mAvgRating: "",
       sale_price: "95.000 đ",
       cost_price: "",
     },
     {
-      Name: "Product Name",
-      Photo: "",
+      mName: "Product Name",
+      mPhotos: "",
       discount: "- 20 %",
-      AvgRating: "",
+      mAvgRating: "",
       sale_price: "80.000 đ",
       cost_price: "100.000 đ",
     },
     {
-      Name: "Product Name",
-      Photo: "",
+      mName: "Product Name",
+      mPhotos: "",
       discount: "",
-      AvgRating: "",
+      mAvgRating: "",
       sale_price: "95.000 đ",
       cost_price: "",
     },
     {
-      Name: "Product Name",
-      Photo: "",
+      mName: "Product Name",
+      mPhotos: "",
       discount: "",
-      AvgRating: "",
+      mAvgRating: "",
       sale_price: "95.000 đ",
       cost_price: "",
     },
     {
-      Name: "Product Name",
-      Photo: "",
+      mName: "Product Name",
+      mPhotos: "",
       discount: "",
-      AvgRating: "",
+      mAvgRating: "",
       sale_price: "95.000 đ",
       cost_price: "",
     },
     {
-      Name: "Product Name",
-      Photo: "",
+      mName: "Product Name",
+      mPhotos: "",
       discount: "",
-      AvgRating: "",
+      mAvgRating: "",
       sale_price: "95.000 đ",
       cost_price: "",
     },
