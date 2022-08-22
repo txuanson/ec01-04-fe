@@ -1,6 +1,5 @@
 import React from "react";
 import "./app.css";
-import logo from "../../assets/EC01-04-logo.png";
 
 function ListDesc() {
   return (

@@ -277,8 +277,7 @@
 }
 .brand-container {
   gap: 12px;
-  width: inherit;
-  height: 372px;
+  width: 1170px;
   flex-wrap: wrap;
 }
 .store-blog {
@@ -674,7 +673,7 @@
   text-decoration-line: line-through;
 }
 .discount-tag {
-  position: relative;
+  position: absolute;
   left: 10px;
   top: 10px;
   font-family: "Open Sans";

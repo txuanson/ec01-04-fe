@@ -5,7 +5,7 @@ function Title(props) {
   return (
     <>
       <button type="button" className="category-btn bd-rd-12">
-        {props.cate.Name}
+        {props.item.mName}
       </button>
     </>
   );
@@ -16,13 +16,13 @@ function SubCategory(props) {
     <>
       <div className="pet-category flex-col content-center">
         <button type="button" className="pet-btn content-center bd-rd-12">
-          {props.pet.Name}
+          {props.item.mName}
         </button>
 
         <div className="pet-sub-category flex-col">
-          {props.pet.Child.map((SubCate) => (
+          {props.item.childCategories.map((child) => (
             <div className="pet-sub-container">
-              <Title cate={SubCate} />
+              <Title item={child} />
             </div>
           ))}
         </div>
@@ -32,69 +32,186 @@ function SubCategory(props) {
 }
 
 function Category() {
-  const [categories, setCategories] = useState([
+  const [Category, setCategory] = useState([
     {
-      Name: "Thức ăn, dinh dưỡng",
-      Desc: "",
-      Child: [],
-    },
-    {
-      Name: "Vệ sinh, chăm sóc",
-      Desc: "",
-      Child: [],
-    },
-    {
-      Name: "Đồ dùng, phụ kiện",
-      Desc: "",
-      Child: [
+      mName: "Thức ăn, dinh dưỡng",
+      mDesc: "",
+      childCategories: [
         {
-          Name: "Phụ kiện cho chó",
-          Desc: "",
-          Child: [
-            { Name: "Quần áo & Mũ nón", Desc: "" },
-            { Name: "Vòng cổ & Dây dắt", Desc: "" },
-            { Name: "Rọ mõm", Desc: "" },
-            { Name: "Đồ chơi & Huấn luyện", Desc: "" },
-            { Name: "Địu chó", Desc: "" },
-            { Name: "Túi xách chó", Desc: "" },
-            { Name: "Balo đựng chó", Desc: "" },
-            { Name: "Lồng vận chuyển", Desc: "" },
+          mName: "Thức ăn cho chó",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
           ],
         },
         {
-          Name: "Phụ kiện cho mèo",
-          Desc: "",
-          Child: [
-            { Name: "Quần áo & Trang sức", Desc: "" },
-            { Name: "Vòng cổ & Dây dắt", Desc: "" },
-            { Name: "Đồ chơi & Huấn luyện", Desc: "" },
-            { Name: "Túi xách mèo", Desc: "" },
-            { Name: "Balo đựng mèo", Desc: "" },
-            { Name: "Lồng vận chuyển", Desc: "" },
+          mName: "Thức ăn cho mèo",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
           ],
         },
       ],
     },
     {
-      Name: "Nhà, chuồng, nệm",
-      Desc: "",
-      Child: [],
+      mName: "Vệ sinh, chăm sóc",
+      mDesc: "",
+      childCategories: [
+        {
+          mName: "Chăm sóc cho chó",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+        {
+          mName: "Chăm sóc cho mèo",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+      ],
     },
     {
-      Name: "Thuốc thú y",
-      Desc: "",
-      Child: [],
+      mName: "Đồ dùng, phụ kiện",
+      mDesc: "",
+      childCategories: [
+        {
+          mName: "Phụ kiện cho chó",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+        {
+          mName: "Phụ kiện cho mèo",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Trang sức", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Túi xách mèo", mDesc: "" },
+            { mName: "Balo đựng mèo", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+      ],
+    },
+    {
+      mName: "Nhà, chuồng, nệm",
+      mDesc: "",
+      childCategories: [
+        {
+          mName: "Nhà cho chó",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+        {
+          mName: "Nhà cho mèo",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+      ],
+    },
+    {
+      mName: "Thuốc thú y",
+      mDesc: "",
+      childCategories: [
+        {
+          mName: "Thuốc cho chó",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+        {
+          mName: "Thuốc cho mèo",
+          mDesc: "",
+          childCategories: [
+            { mName: "Quần áo & Mũ nón", mDesc: "" },
+            { mName: "Vòng cổ & Dây dắt", mDesc: "" },
+            { mName: "Rọ mõm", mDesc: "" },
+            { mName: "Đồ chơi & Huấn luyện", mDesc: "" },
+            { mName: "Địu chó", mDesc: "" },
+            { mName: "Túi xách chó", mDesc: "" },
+            { mName: "Balo đựng chó", mDesc: "" },
+            { mName: "Lồng vận chuyển", mDesc: "" },
+          ],
+        },
+      ],
     },
   ]);
-  // const getCategories = async () => {
+
+  // const getCategory = async () => {
   //   const res = await fetch("https://ec01-04-be.herokuapp.com/category");
   //   const data = await res.json();
-  //   //setCategories(data);
-  //   console.log(data);
-  // }
+  //   setCategory(data);
+  // };
   // useEffect(() => {
-  //   getCategories();
-  // } , []);
+  //   getCategory();
+  // }, []);
+
   return (
     <>
       <div className="body bg-grey-100">
@@ -105,15 +222,15 @@ function Category() {
             </div>
 
             <div className="section-content heading-category flex-col">
-              {categories.map((Cate) => (
-                <Title cate={Cate} />
+              {Category.map((cate) => (
+                <Title item={cate} />
               ))}
             </div>
           </div>
 
           <div className="sub-category flex-row content-center bg-pink-25 bd-rd-12">
-            {categories[2].Child.map((Accessory) => (
-              <SubCategory pet={Accessory} />
+            {Category[0].childCategories.map((child) => (
+              <SubCategory item={child} />
             ))}
           </div>
         </div>
