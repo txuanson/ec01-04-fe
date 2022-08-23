@@ -677,13 +677,6 @@
   position: relative;
   background: #f9f9f9;
 }
-.product-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 170px;
-  gap: 2px;
-}
 .product-title {
   font-family: "Open Sans";
   font-style: normal;
@@ -1220,16 +1213,97 @@
 .product-view-content {
   gap: 30px;
 }
-.product-content-title {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-}
-.product-content-subtitle {
+.product-content {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   white-space: pre-line;
+}
+
+.cart-detail {
+  padding: 16px 0;
+  width: 1170px;
+}
+.cart-products {
+  gap: 35px;
+}
+.cart-summary {
+  width: 350px;
+  gap: 30px;
+}
+.cart-summary-detail {
+  gap: 10px;
+}
+.cart-product-item {
+  gap: 20px;
+  align-items: center;
+}
+.cart-pd-it-delete {
+  width: 30px;
+  height: 30px;
+}
+.cart-pd-it-delete i:hover {
+  color: #151515;
+}
+.cart-pd-it-img {
+  width: 200px;
+  height: 200px;
+}
+.cart-pd-it-detail {
+  width: 450px;
+  gap: 10px;
+}
+.cart-item-name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+
+  width: inherit;
+  height: 54px;
+  text-align: left;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cart-item-name:hover {
+  text-decoration: underline;
+}
+.cart-it-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.cart-it-title {
+  width: 90px;
+}
+.cart-product-line {
+  width: 720px;
+  border: 1px solid #f9f9f9;
+}
+.cart-summary-item {
+  align-items: center;
+}
+.cart-sm-it-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.cart-sm-it-content {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: right;
+  width: 180px;
+}
+.cart-summary-line {
+  width: inherit;
+  border: 2px solid #d9adad4d;
 }
