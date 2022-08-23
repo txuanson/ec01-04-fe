@@ -6,6 +6,7 @@ import Authen from "./pages/Authen";
 import HomePage from "./pages/HomePage";
 import ProductsList from "./pages/ProductsList";
 import ProductDetail from "./pages/ProductDetail";
+import ShoppingCart from "./pages/ShoppingCart";
 function App() {
   return (
     <MainLayout>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Authen />} />
           <Route path="/products" element={<ProductsList />} />
           <Route path="/product-detail" element={<ProductDetail />} />
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
         </Routes>
       </BrowserRouter>
     </MainLayout>

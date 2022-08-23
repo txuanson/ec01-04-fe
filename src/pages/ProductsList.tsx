@@ -7,7 +7,7 @@ import ListSort from "../components/layout/ListSort";
 import ListResult from "../components/layout/ListResult";
 import Pagination from "../components/layout/Pagination";
 
-export default function HomePage() {
+export default function ProductsList() {
   return (
     <>
       <Header2 />
