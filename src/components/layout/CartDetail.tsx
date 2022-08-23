@@ -11,7 +11,10 @@ function CartItem(props) {
           <i className="fa fa-times-circle-o fa-2x text-pink-100"></i>
         </button>
 
-        <img src="" className="cart-pd-it-img bg-grey-100 bd-1-grey bd-rd-12" />
+        <img
+          src={props.item.mPhotos[0]}
+          className="cart-pd-it-img bg-grey-100 bd-1-grey bd-rd-12"
+        />
 
         <div className="cart-pd-it-detail flex-col">
           <button className="cart-item-name text-black-100">
@@ -100,6 +103,7 @@ function CartDetail() {
     {
       mName:
         "Quần áo cho chó mèo AMBABY PET mà viết thêm cái tên sản phẩm cho nó siêu dài để test cái giao diện đồ đó nhe",
+      mPhotos: [],
       mManu: "HAND IN HAND",
       mOrigin: "VietNam",
       mPrice: "245.000 đ",
@@ -113,6 +117,7 @@ function CartDetail() {
     },
     {
       mName: "Túi Xách Chó Mèo Hình Dấu Chân",
+      mPhotos: [],
       mManu: "PetBag",
       mOrigin: "VietNam",
       mPrice: "250.000 đ",
@@ -171,7 +176,9 @@ function CartDetail() {
                 <button className="default-btn-disagree">
                   Xem sản phẩm khác
                 </button>
-                <button className="default-btn-agree">THANH TOÁN</button>
+                <button type="submit" className="default-btn-agree">
+                  THANH TOÁN
+                </button>
               </div>
             </div>
           </div>
