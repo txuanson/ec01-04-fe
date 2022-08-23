@@ -39,9 +39,9 @@ function Header2() {
 
           <div className="flex-row account">
             <a href="/login">
-            <button type="button" className="account-btn">
-              Đăng nhập
-            </button>
+              <button type="button" className="account-btn">
+                Đăng nhập
+              </button>
             </a>
             <button type="button" className="account-btn">
               Đăng ký
@@ -65,9 +65,9 @@ function Header2() {
               aria-describedby="helpId"
               placeholder="Tìm kiếm sản phẩm, danh mục..."
             />
-            <a href="#">
+            <button type="submit">
               <i className="fa fa-search ic-search" aria-hidden="true"></i>
-            </a>
+            </button>
           </div>
 
           <div className="flex-row account-cart">

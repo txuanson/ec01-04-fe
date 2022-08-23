@@ -16,15 +16,30 @@ function ListSort() {
                   </div>
                   <div className="filter-box-list flex-row">
                     <div className="filter-box-choose flex-row text-black-100">
-                      <button className="filter-checkbox bd-1-grey"></button>
+                      <input
+                        type="radio"
+                        name="sort"
+                        value="popular"
+                        className="filter-checkbox"
+                      />
                       Phổ biến
                     </div>
                     <div className="filter-box-choose flex-row text-black-100">
-                      <button className="filter-checkedbox"></button>
+                      <input
+                        type="radio"
+                        name="sort"
+                        value="rating"
+                        className="filter-checkbox"
+                      />
                       Đánh giá
                     </div>
                     <div className="filter-box-choose flex-row text-black-100">
-                      <button className="filter-checkbox bd-1-grey"></button>
+                      <input
+                        type="radio"
+                        name="sort"
+                        value="newest"
+                        className="filter-checkbox"
+                      />
                       Mới nhất
                     </div>
                   </div>
@@ -36,11 +51,21 @@ function ListSort() {
                   </div>
                   <div className="filter-box-list flex-row">
                     <div className="filter-box-choose flex-row text-black-100">
-                      <button className="filter-checkbox bd-1-grey"></button>
+                      <input
+                        type="radio"
+                        name="price"
+                        value="asc"
+                        className="filter-checkbox"
+                      />
                       Thấp đến Cao
                     </div>
                     <div className="filter-box-choose flex-row text-black-100">
-                      <button className="filter-checkedbox"></button>
+                      <input
+                        type="radio"
+                        name="price"
+                        value="desc"
+                        className="filter-checkbox"
+                      />
                       Cao đến Thấp
                     </div>
                   </div>

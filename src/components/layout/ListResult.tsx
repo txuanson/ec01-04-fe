@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./app.css";
 
-function Product(props) {
+function ProductItem(props) {
   return (
     <>
       <a href="" className="product-item bd-rd-12">
@@ -40,7 +40,7 @@ function Product(props) {
 }
 
 function ListResult() {
-  const [products, setProduct] = useState([
+  const [Product, setProduct] = useState([
     {
       mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
       mPhotos: "",
@@ -201,18 +201,21 @@ function ListResult() {
                       320
                     </div>
                   </button>
+
                   <button className="filter-item text-black-100 flex-row space-between">
                     Vòng cổ & Dây dắt
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
                       112
                     </div>
                   </button>
+
                   <button className="filter-item text-black-100 flex-row space-between">
                     Lồng vận chuyển
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
                       48
                     </div>
                   </button>
+
                   <button className="filter-item text-black-100 flex-row space-between">
                     Đồ chơi & Huấn luyện
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
@@ -226,33 +229,52 @@ function ListResult() {
                 <div className="filter-title text-black-100">THƯƠNG HIỆU</div>
                 <div className="filter-content flex-col">
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="manufacture"
+                      value="Ikea"
+                      className="filter-item-checkbox"
+                    />
                     IKEA
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkedbox bg-pink-100 bd-1-grey">
-                      <i
-                        className="fa fa-check text-white-100"
-                        aria-hidden="true"
-                      ></i>
-                    </button>
+                    <input
+                      type="checkbox"
+                      name="manufacturer"
+                      value="Codos"
+                      className="filter-item-checkbox"
+                    />
                     CODOS
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkedbox bg-pink-100 bd-1-grey">
-                      <i
-                        className="fa fa-check text-white-100"
-                        aria-hidden="true"
-                      ></i>
-                    </button>
+                    <input
+                      type="checkbox"
+                      name="manufacturer"
+                      value="Xpower"
+                      className="filter-item-checkbox"
+                    />
                     XPOWER
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="manufacturer"
+                      value="Xinding"
+                      className="filter-item-checkbox"
+                    />
                     XINDING
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="manufacturer"
+                      value="Richell"
+                      className="filter-item-checkbox"
+                    />
                     RICHELL
                   </div>
                 </div>
@@ -262,33 +284,52 @@ function ListResult() {
                 <div className="filter-title text-black-100">XUẤT XỨ</div>
                 <div className="filter-content flex-col">
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="origin"
+                      value="VietNam"
+                      className="filter-item-checkbox"
+                    />
                     Việt Nam
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkedbox bg-pink-100 bd-1-grey">
-                      <i
-                        className="fa fa-check text-white-100"
-                        aria-hidden="true"
-                      ></i>
-                    </button>
+                    <input
+                      type="checkbox"
+                      name="origin"
+                      value="China"
+                      className="filter-item-checkbox"
+                    />
                     Trung Quốc
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkedbox bg-pink-100 bd-1-grey">
-                      <i
-                        className="fa fa-check text-white-100"
-                        aria-hidden="true"
-                      ></i>
-                    </button>
+                    <input
+                      type="checkbox"
+                      name="origin"
+                      value="Japan"
+                      className="filter-item-checkbox"
+                    />
                     Nhật Bản
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="origin"
+                      value="USA"
+                      className="filter-item-checkbox"
+                    />
                     Mỹ
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="origin"
+                      value="Korea"
+                      className="filter-item-checkbox"
+                    />
                     Hàn Quốc
                   </div>
                 </div>
@@ -298,7 +339,12 @@ function ListResult() {
                 <div className="filter-title text-black-100">ĐÁNH GIÁ</div>
                 <div className="filter-content flex-col">
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="avg-rating"
+                      value="5"
+                      className="filter-item-checkbox"
+                    />
                     <div className="rating-star">
                       <i className="fa fa-star text-yellow-100"></i>
                       <i className="fa fa-star text-yellow-100"></i>
@@ -308,8 +354,14 @@ function ListResult() {
                     </div>
                     &nbsp;(5 sao)
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="avg-rating"
+                      value="4"
+                      className="filter-item-checkbox"
+                    />
                     <div className="rating-star">
                       <i className="fa fa-star text-yellow-100"></i>
                       <i className="fa fa-star text-yellow-100"></i>
@@ -319,8 +371,14 @@ function ListResult() {
                     </div>
                     &nbsp;(4 sao)
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="avg-rating"
+                      value="3"
+                      className="filter-item-checkbox"
+                    />
                     <div className="rating-star">
                       <i className="fa fa-star text-yellow-100"></i>
                       <i className="fa fa-star text-yellow-100"></i>
@@ -330,8 +388,14 @@ function ListResult() {
                     </div>
                     &nbsp;(3 sao)
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="avg-rating"
+                      value="2"
+                      className="filter-item-checkbox"
+                    />
                     <div className="rating-star">
                       <i className="fa fa-star text-yellow-100"></i>
                       <i className="fa fa-star text-yellow-100"></i>
@@ -341,8 +405,14 @@ function ListResult() {
                     </div>
                     &nbsp;(2 sao)
                   </div>
+
                   <div className="filter-item text-black-100 flex-row">
-                    <button className="filter-item-checkbox bd-1-grey"></button>
+                    <input
+                      type="checkbox"
+                      name="avg-rating"
+                      value="1"
+                      className="filter-item-checkbox"
+                    />
                     <div className="rating-star">
                       <i className="fa fa-star text-yellow-100"></i>
                       <i className="fa fa-star-o text-grey-100"></i>
@@ -387,15 +457,17 @@ function ListResult() {
                     </div>
                   </div>
                   <div className="flex-row space-between">
-                    <button className="default-btn-agree">Áp dụng</button>
+                    <button type="submit" className="default-btn-agree">
+                      Áp dụng
+                    </button>
                     <button className="default-btn-disagree">Xóa tất cả</button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="list-products flex-row">
-              {products.map((product) => (
-                <Product item={product} />
+              {Product.map((product) => (
+                <ProductItem item={product} />
               ))}
             </div>
           </div>

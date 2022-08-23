@@ -187,7 +187,7 @@ function ProductInfo() {
                     min="1"
                     placeholder="1"
                   />
-                  <button className="default-btn-agree">
+                  <button type="submit" className="default-btn-agree">
                     Thêm vào giỏ hàng
                   </button>
                 </div>

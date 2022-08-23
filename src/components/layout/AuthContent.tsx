@@ -32,7 +32,10 @@ function SigninBox() {
           </div>
         </div>
         <div className="auth-btn-group flex-col">
-          <button className="auth-btn text-black-100 bg-pink-100 bd-rd-12">
+          <button
+            type="submit"
+            className="auth-btn text-black-100 bg-pink-100 bd-rd-12"
+          >
             ĐĂNG NHẬP
           </button>
           <button className="auth-bottom-btn text-pink-100 ">
