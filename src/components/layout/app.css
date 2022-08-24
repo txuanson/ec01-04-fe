@@ -116,6 +116,9 @@
 .bd-1-pink {
   border: 1px solid #d9adad;
 }
+.bd-1-black {
+  border: 1px solid #151515;
+}
 .bd-rd-12 {
   border-radius: 12px;
 }
@@ -1496,4 +1499,28 @@
   font-weight: 500;
   font-size: 16px;
   font-style: italic;
+}
+.introduce {
+  padding: 50px 0;
+}
+.introduce-img {
+  height: fit-content;
+  background: url("../../assets/introduce.png");
+  background-size: 100%;
+  background-position: center;
+  padding: 0px;
+  border: 2px solid #151515;
+}
+.introduce-img-mask {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(131, 131, 131, 0.7);
+  border-radius: 12px;
+  padding: 0px 45px;
+}
+.introduce-border {
+  border: 3px solid #d9adad;
 }
