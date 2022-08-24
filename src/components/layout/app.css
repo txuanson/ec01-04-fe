@@ -666,7 +666,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px;
   gap: 10px;
   width: 190px;
@@ -817,7 +817,10 @@
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  white-space: pre;
+  white-space: pre-line;
+}
+.footer-subtitle a {
+  text-decoration: underline;
 }
 .copyright {
   font-family: "Open Sans";
@@ -1465,4 +1468,32 @@
 }
 .agree-policy button:hover {
   text-decoration: underline;
+}
+.article {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 0 90px 0;
+  gap: 50px;
+}
+.article-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.article-content {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  white-space: pre-line;
+}
+.article-footer {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+  font-style: italic;
 }

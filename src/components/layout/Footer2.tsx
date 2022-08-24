@@ -10,21 +10,21 @@ function Footer2() {
               <div className="footer-col">
                 <div className="footer-title">THÔNG TIN LIÊN HỆ</div>
                 <div className="footer-subtitle">
-                  Địa chỉ: số, đường, phường, quận, tp
+                  Địa chỉ: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, TP Hồ Chí Minh
                 </div>
                 <div className="footer-subtitle">Điện thoại: 0123.456.789</div>
                 <div className="footer-subtitle">
                   Email: huimitu.pet@gmail.com
                 </div>
                 <div className="footer-subtitle">
-                  Website: https://huimitu-pet.vn/
+                  Website: <a href="">https://ec01-04-fe.vercel.app/</a>
                 </div>
               </div>
 
               <div className="footer-col">
                 <div className="footer-title">HỖ TRỢ KHÁCH HÀNG</div>
                 <a className="footer-subtitle" href="#">
-                  Hướng dẫn đặt hàng
+                  Hướng dẫn mua hàng
                 </a>
                 <a className="footer-subtitle" href="#">
                   Chính sách Thanh toán

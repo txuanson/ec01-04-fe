@@ -15,7 +15,14 @@ function Product(props) {
         </div>
         <div className="product-content">
           <div className="product-title text-black-100">{props.item.mName}</div>
-          <div className="rating">{props.item.mAvgRating}</div>
+          <div className="rating-star">
+            {/* {Product.mAvgRating} */}
+            <i className="fa fa-star text-yellow-100"></i>
+            <i className="fa fa-star text-yellow-100"></i>
+            <i className="fa fa-star text-yellow-100"></i>
+            <i className="fa fa-star text-yellow-100"></i>
+            <i className="fa fa-star text-yellow-100"></i>
+          </div>
           <div className="sale-price text-black-100">
             {props.item.sale_price}
           </div>
