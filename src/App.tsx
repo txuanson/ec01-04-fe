@@ -8,6 +8,7 @@ import ProductsList from "./pages/ProductsList";
 import ProductDetail from "./pages/ProductDetail";
 import ShoppingCart from "./pages/ShoppingCart";
 import CheckoutDetail from "./pages/CheckoutDetail";
+import Policy from "./pages/Policy";
 function App() {
   return (
     <MainLayout>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/product-detail" element={<ProductDetail />} />
           <Route path="/shopping-cart" element={<ShoppingCart />} />
           <Route path="/checkout-detail" element={<CheckoutDetail />} />
+          <Route path="/policy" element={<Policy />} />
         </Routes>
       </BrowserRouter>
     </MainLayout>
