@@ -176,9 +176,13 @@ function CartDetail() {
                 <button className="default-btn-disagree">
                   Xem sản phẩm khác
                 </button>
-                <button type="submit" className="default-btn-agree">
+                <a
+                  href="/checkout-detail"
+                  type="submit"
+                  className="default-btn-agree"
+                >
                   THANH TOÁN
-                </button>
+                </a>
               </div>
             </div>
           </div>

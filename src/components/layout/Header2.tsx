@@ -90,9 +90,13 @@ function Header2() {
       <div className="body bg-pink-50">
         <div className="container flex-row content-center">
           <div className="flex-row menu-bar">
-            <button type="button" className="menu-btn text-black-100">
+            <a
+              href="/about-us"
+              type="button"
+              className="menu-btn text-black-100"
+            >
               Trang chủ giới thiệu
-            </button>
+            </a>
             <button type="button" className="menu-btn text-black-100">
               Danh mục sản phẩm
             </button>

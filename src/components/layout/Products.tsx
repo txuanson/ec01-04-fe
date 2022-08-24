@@ -6,7 +6,7 @@ import logopaws from "../../assets/EC01-04-logo-paws.png";
 function Product(props) {
   return (
     <>
-      <a href="" className="product-item bd-rd-12">
+      <a href="/product-detail" className="product-item bd-rd-12">
         <div className="product-img bg-rd-12">
           <img src={props.item.mPhotos}></img>
           <div className="discount-tag bg-pink-30 bd-rd-12">
@@ -100,12 +100,12 @@ function ListProduct(props) {
             <img src={logopaws} alt="logo" className="logo-paws" />
             <div className="line" />
           </div>
-          <button
-            type="button"
+          <a
+            href="/products"
             className="group-btn bg-pink-30 text-black-100 bd-rd-12"
           >
             Xem tất cả
-          </button>
+          </a>
         </div>
         <div className="group-content">
           {products.map((product) => (

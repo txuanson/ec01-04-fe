@@ -23,19 +23,19 @@ function Footer2() {
 
               <div className="footer-col">
                 <div className="footer-title">HỖ TRỢ KHÁCH HÀNG</div>
-                <a className="footer-subtitle" href="#">
+                <a className="footer-subtitle" href="/policy">
                   Hướng dẫn mua hàng
                 </a>
-                <a className="footer-subtitle" href="#">
+                <a className="footer-subtitle" href="/policy">
                   Chính sách Thanh toán
                 </a>
-                <a className="footer-subtitle" href="#">
+                <a className="footer-subtitle" href="/policy">
                   Chính sách Giao nhận hàng
                 </a>
-                <a className="footer-subtitle" href="#">
+                <a className="footer-subtitle" href="/policy">
                   Chính sách Đổi trả hàng
                 </a>
-                <a className="footer-subtitle" href="#">
+                <a className="footer-subtitle" href="/policy">
                   Chính sách Bảo mật thông tin
                 </a>
               </div>
