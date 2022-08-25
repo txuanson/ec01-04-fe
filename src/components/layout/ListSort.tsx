@@ -75,7 +75,7 @@ function ListSort() {
               <div className="sort-current flex-row">
                 <div className="sorting text-grey-100">Đang lọc theo</div>
                 <div className="sorting-tag flex-row text-pink-100 bg-pink-30 bd-rd-12">
-                  Sắp xếp theo: Đánh giá
+                  Sắp xếp theo: Phổ biến
                   <button className="sorting-tag-close">X</button>
                 </div>
                 <div className="sorting-tag flex-row text-pink-100 bg-pink-30 bd-rd-12">
@@ -87,7 +87,7 @@ function ListSort() {
             <div className="list-page flex-col">
               <div className="list-current flex-row text-grey-100">
                 <div className="list-result-tag text-pink-100 bg-pink-30 bd-rd-12">
-                  336
+                  7
                 </div>
                 Kết quả tìm kiếm
               </div>
@@ -97,7 +97,7 @@ function ListSort() {
                   <i className="fa fa-chevron-left text-white-100"></i>
                 </button>
                 <div className="page-number flex-row text-black-100">
-                  <div>1</div>/<div>17</div>
+                  <div>1</div>/<div>1</div>
                 </div>
                 <button className="page-move content-center">
                   <i className="fa fa-chevron-right text-white-100"></i>

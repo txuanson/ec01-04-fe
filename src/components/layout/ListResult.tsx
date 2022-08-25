@@ -4,7 +4,7 @@ import "./app.css";
 function ProductItem(props) {
   return (
     <>
-      <a href="" className="product-item bd-rd-12">
+      <a href="/product-detail" className="product-item bd-rd-12">
         <div className="product-img bd-rd-12">
           <img src={props.item.mPhotos}></img>
           <div className="discount-tag bg-pink-30 bd-rd-12">
@@ -18,7 +18,7 @@ function ProductItem(props) {
             <i className="fa fa-star text-yellow-100"></i>
             <i className="fa fa-star text-yellow-100"></i>
             <i className="fa fa-star text-yellow-100"></i>
-            <i className="fa fa-star text-yellow-100"></i>
+            <i className="fa fa-star-o text-grey-100"></i>
           </div>
           <div className="price-btn flex-row space-between">
             <div className="flex-col">
@@ -42,150 +42,70 @@ function ProductItem(props) {
 function ListResult() {
   const [Product, setProduct] = useState([
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Túi Xách Chó Mèo Hình Dấu Chân",
+      mPhotos:
+        "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1-1.jpg",
+      discount: "- 22 %",
+      mAvgRating: "4",
+      sale_price: "390.000 đ",
+      cost_price: "500.000 đ",
     },
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Nệm Tai Thỏ Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/O1CN01O1AcOm1FDySZVBsx7_6000000000454-0-cib.jpg",
+      discount: "",
+      mAvgRating: "3",
+      sale_price: "100.000 đ",
+      cost_price: "",
     },
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Nệm Chấm Bi Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/4971963373_1693295712.jpg",
+      discount: "- 28 %",
+      mAvgRating: "2",
+      sale_price: "315.000 đ",
+      cost_price: "440.000 đ",
     },
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Nệm Giường 3D Cho Chó Mèo",
+      mPhotos:
+        "https://poodlestoresaigon.com/wp-content/uploads/2021/06/9195985792_916446139.jpg",
+      discount: "",
+      mAvgRating: "4",
+      sale_price: "350.000 đ",
+      cost_price: "",
     },
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Chuồng Nhựa Láp Ráp Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/chuong-nhua-7.jpg",
+      discount: "",
+      mAvgRating: "3",
+      sale_price: "1.800.000 đ",
+      cost_price: "",
     },
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Cũi Gỗ Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/chuong-go-2.jpg",
+      discount: "",
+      mAvgRating: "4",
+      sale_price: "3.500.000 đ",
+      cost_price: "",
     },
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
-    },
-    {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      mPrice: "100.000 đ",
+      mName: "Chuồng Sắt Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/chuong-gap-9-510x510.jpg.webp",
+      discount: "",
+      mAvgRating: "3",
+      sale_price: "300.000 đ",
+      cost_price: "",
     },
   ]);
+
   return (
     <>
       <div className="body bg-grey-100">
@@ -196,30 +116,37 @@ function ListResult() {
                 <div className="filter-title text-black-100">DANH MỤC</div>
                 <div className="filter-content flex-col">
                   <button className="filter-item text-black-100 flex-row space-between">
-                    Quần áo & Mũ nón
+                    Nhà, chuồng, nệm
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
-                      320
+                      5
                     </div>
                   </button>
 
                   <button className="filter-item text-black-100 flex-row space-between">
-                    Vòng cổ & Dây dắt
+                    Nhà cho mèo
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
-                      112
+                      3
                     </div>
                   </button>
 
                   <button className="filter-item text-black-100 flex-row space-between">
-                    Lồng vận chuyển
+                    Nhà cho chó
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
-                      48
+                      3
                     </div>
                   </button>
 
                   <button className="filter-item text-black-100 flex-row space-between">
-                    Đồ chơi & Huấn luyện
+                    Ổ nệm & Thảm đệm cho mèo
                     <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
-                      32
+                      3
+                    </div>
+                  </button>
+
+                  <button className="filter-item text-black-100 flex-row space-between">
+                    Phụ kiện cho mèo
+                    <div className="filter-item-tag text-pink-100 bg-pink-30 bd-rd-12">
+                      1
                     </div>
                   </button>
                 </div>
@@ -232,50 +159,40 @@ function ListResult() {
                     <input
                       type="checkbox"
                       name="manufacture"
-                      value="Ikea"
+                      value="PetBag"
                       className="filter-item-checkbox"
                     />
-                    IKEA
+                    PetBag
                   </div>
 
                   <div className="filter-item text-black-100 flex-row">
                     <input
                       type="checkbox"
                       name="manufacturer"
-                      value="Codos"
+                      value="ABC"
                       className="filter-item-checkbox"
                     />
-                    CODOS
+                    ABC
                   </div>
 
                   <div className="filter-item text-black-100 flex-row">
                     <input
                       type="checkbox"
                       name="manufacturer"
-                      value="Xpower"
+                      value="MyPet"
                       className="filter-item-checkbox"
                     />
-                    XPOWER
+                    MyPet
                   </div>
 
                   <div className="filter-item text-black-100 flex-row">
                     <input
                       type="checkbox"
                       name="manufacturer"
-                      value="Xinding"
+                      value="Behar"
                       className="filter-item-checkbox"
                     />
-                    XINDING
-                  </div>
-
-                  <div className="filter-item text-black-100 flex-row">
-                    <input
-                      type="checkbox"
-                      name="manufacturer"
-                      value="Richell"
-                      className="filter-item-checkbox"
-                    />
-                    RICHELL
+                    Behar
                   </div>
                 </div>
               </div>
@@ -297,20 +214,20 @@ function ListResult() {
                     <input
                       type="checkbox"
                       name="origin"
-                      value="China"
+                      value="ThaiLand"
                       className="filter-item-checkbox"
                     />
-                    Trung Quốc
+                    Thái Lan
                   </div>
 
                   <div className="filter-item text-black-100 flex-row">
                     <input
                       type="checkbox"
                       name="origin"
-                      value="Japan"
+                      value="China"
                       className="filter-item-checkbox"
                     />
-                    Nhật Bản
+                    Trung Quốc
                   </div>
 
                   <div className="filter-item text-black-100 flex-row">
@@ -327,10 +244,10 @@ function ListResult() {
                     <input
                       type="checkbox"
                       name="origin"
-                      value="Korea"
+                      value="Japan"
                       className="filter-item-checkbox"
                     />
-                    Hàn Quốc
+                    Nhật Bản
                   </div>
                 </div>
               </div>

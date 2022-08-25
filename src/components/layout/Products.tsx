@@ -3,12 +3,12 @@ import { useState } from "react";
 import "./app.css";
 import logopaws from "../../assets/EC01-04-logo-paws.png";
 
-function Product(props) {
+function ProductItem(props) {
   return (
     <>
       <a href="/product-detail" className="product-item bd-rd-12">
         <div className="product-img bg-rd-12">
-          <img src={props.item.mPhotos}></img>
+          <img src={props.item.mPhotos} className="product-img"></img>
           <div className="discount-tag bg-pink-30 bd-rd-12">
             <div className="text-pink-100">{props.item.discount}</div>
           </div>
@@ -16,12 +16,12 @@ function Product(props) {
         <div className="product-content">
           <div className="product-title text-black-100">{props.item.mName}</div>
           <div className="rating-star">
-            {/* {Product.mAvgRating} */}
+            {/* {props.item.mAvgRating} */}
             <i className="fa fa-star text-yellow-100"></i>
             <i className="fa fa-star text-yellow-100"></i>
             <i className="fa fa-star text-yellow-100"></i>
             <i className="fa fa-star text-yellow-100"></i>
-            <i className="fa fa-star text-yellow-100"></i>
+            <i className="fa fa-star-o text-grey-100"></i>
           </div>
           <div className="sale-price text-black-100">
             {props.item.sale_price}
@@ -36,53 +36,59 @@ function Product(props) {
 }
 
 function ListProduct(props) {
-  const [products, setProduct] = useState([
+  const [Product, setProduct] = useState([
     {
-      mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
-      mPhotos: "",
+      mName: "Túi Xách Chó Mèo Hình Dấu Chân",
+      mPhotos:
+        "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1-1.jpg",
+      discount: "- 22 %",
+      mAvgRating: "4",
+      sale_price: "390.000 đ",
+      cost_price: "500.000 đ",
+    },
+    {
+      mName: "Nệm Tai Thỏ Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/O1CN01O1AcOm1FDySZVBsx7_6000000000454-0-cib.jpg",
       discount: "",
-      mAvgRating: "",
-      sale_price: "95.000 đ",
+      mAvgRating: "3",
+      sale_price: "100.000 đ",
       cost_price: "",
     },
     {
-      mName: "Product Name",
-      mPhotos: "",
-      discount: "- 20 %",
-      mAvgRating: "",
-      sale_price: "80.000 đ",
-      cost_price: "100.000 đ",
+      mName: "Nệm Chấm Bi Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/4971963373_1693295712.jpg",
+      discount: "- 28 %",
+      mAvgRating: "2",
+      sale_price: "315.000 đ",
+      cost_price: "440.000 đ",
     },
     {
-      mName: "Product Name",
-      mPhotos: "",
+      mName: "Nệm Giường 3D Cho Chó Mèo",
+      mPhotos:
+        "https://poodlestoresaigon.com/wp-content/uploads/2021/06/9195985792_916446139.jpg",
       discount: "",
-      mAvgRating: "",
-      sale_price: "95.000 đ",
+      mAvgRating: "4",
+      sale_price: "350.000 đ",
       cost_price: "",
     },
     {
-      mName: "Product Name",
-      mPhotos: "",
+      mName: "Chuồng Nhựa Láp Ráp Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/chuong-nhua-7.jpg",
       discount: "",
-      mAvgRating: "",
-      sale_price: "95.000 đ",
+      mAvgRating: "3",
+      sale_price: "1.800.000 đ",
       cost_price: "",
     },
     {
-      mName: "Product Name",
-      mPhotos: "",
+      mName: "Cũi Gỗ Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/chuong-go-2.jpg",
       discount: "",
-      mAvgRating: "",
-      sale_price: "95.000 đ",
-      cost_price: "",
-    },
-    {
-      mName: "Product Name",
-      mPhotos: "",
-      discount: "",
-      mAvgRating: "",
-      sale_price: "95.000 đ",
+      mAvgRating: "4",
+      sale_price: "3.500.000 đ",
       cost_price: "",
     },
   ]);
@@ -107,9 +113,10 @@ function ListProduct(props) {
             Xem tất cả
           </a>
         </div>
+
         <div className="group-content">
-          {products.map((product) => (
-            <Product item={product} />
+          {Product.map((product) => (
+            <ProductItem item={product} />
           ))}
         </div>
       </div>

@@ -7,7 +7,7 @@ function OrderProduct(props) {
     <>
       <div className="order-product-item flex-row">
         <img
-          src={props.item.mPhotos[0]}
+          src={props.item.mPhotos}
           className="order-pd-it-img bg-grey-100 bd-1-grey bd-rd-12"
         />
 
@@ -31,16 +31,18 @@ function OrderProduct(props) {
 function OrderCheckout() {
   const [Order, setOrder] = useState([
     {
-      mName: "Quần áo cho chó mèo AMBABY PET",
-      mPhotos: [],
-      sale_price: "196.000 đ",
-      mQuantity: 2,
+      mName: "Nệm Tai Thỏ Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/O1CN01O1AcOm1FDySZVBsx7_6000000000454-0-cib.jpg",
+      sale_price: "100.000 đ",
+      mQuantity: 1,
     },
     {
       mName: "Túi Xách Chó Mèo Hình Dấu Chân",
-      mPhotos: [],
-      sale_price: "200.000 đ",
-      mQuantity: 1,
+      mPhotos:
+        "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1-1.jpg",
+      sale_price: "390.000 đ",
+      mQuantity: 2,
     },
   ]);
 
@@ -268,7 +270,7 @@ function OrderCheckout() {
                         Tạm tính
                       </div>
                       <div className="product-saleprice text-pink-100">
-                        592.000 đ
+                        880.000 đ
                       </div>
                     </div>
 
@@ -277,7 +279,7 @@ function OrderCheckout() {
                         Phí giao hàng
                       </div>
                       <div className="product-saleprice text-pink-100">
-                        28.000 đ
+                        20.000 đ
                       </div>
                     </div>
 
@@ -286,7 +288,7 @@ function OrderCheckout() {
                         Tổng cộng
                       </div>
                       <div className="product-saleprice text-pink-100">
-                        620.000 đ
+                        900.000 đ
                       </div>
                     </div>
                   </div>
