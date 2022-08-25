@@ -442,6 +442,7 @@
   height: 500px;
   display: flex;
   align-items: center;
+  border: 3px solid #d9adad;
 }
 .product-slider {
   gap: 25px;
@@ -1116,6 +1117,7 @@
   box-shadow: 0px 1px 2px #00000040;
   position: relative;
   left: 0px;
+  display: inline;
 }
 .product-prev:hover {
   box-shadow: 3px 0 5px #00000040;
@@ -1207,6 +1209,7 @@
 
   text-align: left;
 }
+.product-tab-current,
 .product-tab-item:focus {
   color: #d9adad;
   border-bottom: 2px solid #d9adad;
@@ -1586,6 +1589,7 @@
   font-weight: 500;
   font-size: 15px;
 }
+.history-tab-current,
 .history-tab-item:hover,
 .history-tab-item:focus {
   border-bottom: 3px solid #d9adad;

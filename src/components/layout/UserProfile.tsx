@@ -8,7 +8,7 @@ function HistoryProduct(props) {
     <>
       <div className="history-product-item flex-row space-between">
         <img
-          src={props.item.mPhotos[0]}
+          src={props.item.mPhotos}
           className="history-pd-it-img bg-grey-100 bd-1-grey bd-rd-12"
         />
 
@@ -84,11 +84,11 @@ function HistoryOrder(props) {
             <div className="text-red-100">3 sản phẩm</div>
           </div>
           <div className="history-total-money flex-col">
-            <div>Tổng tiền hàng: 592.000 đ</div>
-            <div>Phí vận chuyển: 28.000 đ</div>
+            <div>Tổng tiền hàng: 880.000 đ</div>
+            <div>Phí vận chuyển: 20.000 đ</div>
             <div className="flex-row">
               Thành tiền:&nbsp;
-              <div className="text-red-100">620.000 đ</div>
+              <div className="text-red-100">900.000 đ</div>
             </div>
           </div>
         </div>
@@ -114,57 +114,28 @@ function UserProfile() {
       mAddress: "227 Nguyễn Văn Cừ, Phường 4, Quận 5, TP Hồ Chí Minh",
       products: [
         {
-          mName: "Quần áo cho chó mèo AMBABY PET",
-          mPhotos: [],
-          mPrice: "245.000 đ",
-          sale_price: "196.000 đ",
+          mName: "Nệm Tai Thỏ Cho Chó Mèo",
+          mPhotos:
+            "https://petstoresaigon.com/wp-content/uploads/2021/05/O1CN01O1AcOm1FDySZVBsx7_6000000000454-0-cib.jpg",
+          mPrice: "",
+          sale_price: "100.000 đ",
           variant: [
-            { mVariantType: "Màu sắc", mVariantValue: "Đen" },
-            { mVariantType: "Kích cỡ", mVariantValue: "L" },
-          ],
-          mQuantity: 2,
-        },
-        {
-          mName: "Túi Xách Chó Mèo Hình Dấu Chân",
-          mPhotos: [],
-          mPrice: "250.000 đ",
-          sale_price: "200.000 đ",
-          variant: [
-            { mVariantType: "Màu sắc", mVariantValue: "Trắng" },
-            { mVariantType: "Kích cỡ", mVariantValue: "S" },
+            { mVariantType: "Màu sắc", mVariantValue: "Hồng" },
+            { mVariantType: "Kích cỡ", mVariantValue: "Nhỏ" },
           ],
           mQuantity: 1,
         },
-      ],
-      payment: "Thanh toán khi nhận hàng",
-      mStatus: "Đang vận chuyển",
-    },
-    {
-      mName: "receiver-name",
-      mPhone: "0123456789",
-      mAddress: "227 Nguyễn Văn Cừ, Phường 4, Quận 5, TP Hồ Chí Minh",
-      products: [
-        {
-          mName: "Quần áo cho chó mèo AMBABY PET",
-          mPhotos: [],
-          mPrice: "245.000 đ",
-          sale_price: "196.000 đ",
-          variant: [
-            { mVariantType: "Màu sắc", mVariantValue: "Đen" },
-            { mVariantType: "Kích cỡ", mVariantValue: "L" },
-          ],
-          mQuantity: 2,
-        },
         {
           mName: "Túi Xách Chó Mèo Hình Dấu Chân",
-          mPhotos: [],
-          mPrice: "250.000 đ",
-          sale_price: "200.000 đ",
+          mPhotos:
+            "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1-1.jpg",
+          mPrice: "500.000 đ",
+          sale_price: "390.000 đ",
           variant: [
-            { mVariantType: "Màu sắc", mVariantValue: "Trắng" },
-            { mVariantType: "Kích cỡ", mVariantValue: "S" },
+            { mVariantType: "Màu sắc", mVariantValue: "Hồng" },
+            { mVariantType: "Kích cỡ", mVariantValue: "Nhỏ" },
           ],
-          mQuantity: 1,
+          mQuantity: 2,
         },
       ],
       payment: "Thanh toán khi nhận hàng",
@@ -212,7 +183,9 @@ function UserProfile() {
 
             <div className="user-history flex-col bd-1-pink bd-rd-12">
               <div className="history-tab flex-row space-between">
-                <button className="history-tab-item">Chờ giao</button>
+                <button className="history-tab-item history-tab-current">
+                  Chờ giao
+                </button>
                 <button className="history-tab-item">Đang giao</button>
                 <button className="history-tab-item">Đánh giá</button>
                 <button className="history-tab-item">Lịch sử</button>

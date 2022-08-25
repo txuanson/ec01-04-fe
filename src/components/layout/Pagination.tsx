@@ -15,8 +15,8 @@ function Pagination() {
             <button className="page-btn">
               <i className="fa fa-ellipsis-h"></i>
             </button>
-            <button className="page-btn">16</button>
-            <button className="page-btn">17</button>
+            <button className="page-btn">19</button>
+            <button className="page-btn">20</button>
             <button className="page-btn">
               <i className="fa fa-chevron-right"></i>
             </button>

@@ -24,6 +24,7 @@ function Brand() {
   // useEffect(() => {
   //   getManufacturer();
   // } , []);
+
   const getManufacturer = async () => {
     const res = await fetch("https://ec01-04-be.herokuapp.com/manufacturer");
     const data = await res.json();
@@ -32,6 +33,7 @@ function Brand() {
   useEffect(() => {
     getManufacturer();
   }, []);
+
   return (
     <>
       <div className="body bg-grey-100">

@@ -4,48 +4,57 @@ import "./app.css";
 import logopaws from "../../assets/EC01-04-logo-paws.png";
 
 function ProductInfo() {
+  const addCart = () => {
+    alert("Đã thêm vào giỏ hàng");
+  };
+
   const [Product, setProduct] = useState({
     mId: 76645,
-    mName: "Một cái tên sản phẩm thiệt là siêu dài để test giao diện nhe",
+    mName: "Túi Xách Chó Mèo Hình Dấu Chân",
     mDesc:
-      "MÔ TẢ\nQuần áo cho chó mèo AMBABY PET là sản phẩm dành cho cả chó và mèo.\n\nLỢI ÍCH CHÍNH\n- Quần áo cho chó mèo AMBABY PET sẽ làm cho thú cưng trở nên sành điệu và xinh xắn.\n- Sản phẩm được thiết kế với chất liệu cotton và gia công tỉ mỉ.\n- Kiểu dáng dễ mặc, dễ vận động đem đến sự thoải mái cho chó mèo.\n- Có nhiều kích cỡ cho bạn lựa chọn phù hợp như XS, S, M, L, XL.",
-    mPhotos: [],
+      "MÔ TẢ\nTúi vận chuyển chó mèo hình dấu chân cao cấp\n- Được làm bằng chất liệu mút xốp EVA, nhẹ, mềm và có độ bền cao.\n- Thiết kế khóa kéo dễ dàng tháo rời và gấp gọn, tiết kiệm diện tích\n- Cấu trúc túi đứng và cứng thoải mái cho chó mèo vận động bên trong\n- Kiểu dáng hiện đại, màu sắc bắt mắt\n- Tiện dụng khi đưa thú cưng đi du lịch, dã ngoại,…\n- Có nhiều lỗ thông thoáng để thú cưng luôn cảm thấy dễ chịu và có thể thoải mái ngắm nhìn thế giới bên ngoài\n\nLỢI ÍCH CHÍNH\n- Có dây tay cầm và dây đeo vai\n- Có tấm lót dưới đáy túi để bé nằm không làm bẩn túi\n- Kiểu dáng và màu sắc đẹp, hấp dẫn thú cưng nhà bạn, chất liệu bền\n- Thiết kế chắc chắn, hiện đại mang phong cách thời trang\n- Giúp bạn đi đâu cũng có thể mang thú cưng đi bên cạnh mình một cách thoải mái nhất, tiện lợi nhất\n- Giúp thú cưng thoai mái, không kích ứng da",
+    mPhotos: [
+      "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1-1.jpg",
+      "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1.jpg",
+      "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan2.jpg",
+      "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan3.jpg",
+    ],
     mRatingCount: 4,
-    mAvgRating: 5,
+    mAvgRating: 4,
     variant: [
       {
         mVariantType: "Màu sắc",
-        mVariantValue: "Đen",
+        mVariantValue: "Hồng",
         mStatus: "Còn hàng",
       },
       {
         mVariantType: "Màu sắc",
-        mVariantValue: "Trắng",
+        mVariantValue: "Xanh",
+        mStatus: "Còn hàng",
+      },
+      {
+        mVariantType: "Màu sắc",
+        mVariantValue: "Be",
         mStatus: "Còn hàng",
       },
       {
         mVariantType: "Kích cỡ",
-        mVariantValue: "S",
+        mVariantValue: "Nhỏ",
         mStatus: "Hết hàng",
       },
       {
         mVariantType: "Kích cỡ",
-        mVariantValue: "M",
-        mStatus: "Còn hàng",
-      },
-      {
-        mVariantType: "Kích cỡ",
-        mVariantValue: "L",
+        mVariantValue: "Lớn",
         mStatus: "Còn hàng",
       },
     ],
-    origin: "",
-    category: "Quần áo",
-    manufacturer: "AMBABY PET",
+    origin: "VietNam",
+    category: "Đồ dùng, phụ kiện",
+    manufacturer: "PetBag",
 
-    discount: "- 20 %",
-    sale_price: "196.000 đ",
-    mPrice: "245.000 đ",
+    discount: "- 22 %",
+    sale_price: "390.000 đ",
+    mPrice: "500.000 đ",
   });
 
   return (
@@ -54,15 +63,10 @@ function ProductInfo() {
         <div className="container content-center bg-white-100">
           <div className="product-info flex-row space-between">
             <div className="product-gallery flex-col">
-              <div className="product-thumbnail bg-grey-100 bd-rd-12">
-                <button className="product-prev">
-                  <i className="fa fa-chevron-left text-white-100"></i>
-                </button>
-                <img src={Product.mPhotos[0]}></img>
-                <button className="product-next">
-                  <i className="fa fa-chevron-right text-white-100"></i>
-                </button>
-              </div>
+              <img
+                src={Product.mPhotos[0]}
+                className="product-thumbnail bd-rd-12"
+              />
 
               <div className="product-slider flex-row">
                 <img
@@ -142,27 +146,27 @@ function ProductInfo() {
                       {Product.variant[0].mVariantType}
                     </div>
                     <select className="product-var-dropbox bg-grey-100 bd-1-grey bd-rd-12">
-                      <option value="black">
+                      <option value="pink">
                         {Product.variant[0].mVariantValue}
                       </option>
-                      <option value="white">
+                      <option value="blue">
                         {Product.variant[1].mVariantValue}
+                      </option>
+                      <option value="beige">
+                        {Product.variant[2].mVariantValue}
                       </option>
                     </select>
                   </div>
 
                   <div className="product-var-item flex-row">
                     <div className="product-var-title text-black-100">
-                      {Product.variant[2].mVariantType}
+                      {Product.variant[3].mVariantType}
                     </div>
                     <select className="product-var-dropbox bg-grey-100 bd-1-grey bd-rd-12">
                       <option value="small">
-                        {Product.variant[2].mVariantValue}
-                      </option>
-                      <option value="medium">
                         {Product.variant[3].mVariantValue}
                       </option>
-                      <option value="large">
+                      <option value="big">
                         {Product.variant[4].mVariantValue}
                       </option>
                     </select>
@@ -187,19 +191,21 @@ function ProductInfo() {
                     min="1"
                     placeholder="1"
                   />
-                  <a
-                    href="/shopping-cart"
+                  <button
+                    onClick={addCart}
                     type="submit"
                     className="default-btn-agree"
                   >
                     Thêm vào giỏ hàng
-                  </a>
+                  </button>
                 </div>
               </div>
 
               <div className="product-view flex-col">
                 <div className="flex-row space-between">
-                  <button className="product-tab-item">Mô tả</button>
+                  <button className="product-tab-item product-tab-current">
+                    Mô tả
+                  </button>
                   <button className="product-tab-item">Đánh giá</button>
                 </div>
                 <div className="product-content">{Product.mDesc}</div>

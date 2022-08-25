@@ -40,11 +40,13 @@ function Header2() {
           <div className="flex-row account">
             <a href="/login">
               <button type="button" className="account-btn">
-                Đăng nhập
+                {/* Đăng nhập */}
+                Xin chào username!
               </button>
             </a>
             <button type="button" className="account-btn">
-              Đăng ký
+              {/* Đăng ký */}
+              Đăng xuất
             </button>
           </div>
         </div>
@@ -71,13 +73,13 @@ function Header2() {
           </div>
 
           <div className="flex-row account-cart">
-            <a href="#">
+            <a href="/account">
               <i
                 className="fa fa-user-circle-o ic-acc-cart"
                 aria-hidden="true"
               ></i>
             </a>
-            <a href="#">
+            <a href="/shopping-cart">
               <i
                 className="fa fa-shopping-bag ic-acc-cart"
                 aria-hidden="true"

@@ -12,7 +12,7 @@ function CartItem(props) {
         </button>
 
         <img
-          src={props.item.mPhotos[0]}
+          src={props.item.mPhotos}
           className="cart-pd-it-img bg-grey-100 bd-1-grey bd-rd-12"
         />
 
@@ -101,33 +101,34 @@ function CartItem(props) {
 function CartDetail() {
   const [ShoppingCart, setShoppingCart] = useState([
     {
-      mName:
-        "Quần áo cho chó mèo AMBABY PET mà viết thêm cái tên sản phẩm cho nó siêu dài để test cái giao diện đồ đó nhe",
-      mPhotos: [],
-      mManu: "HAND IN HAND",
-      mOrigin: "VietNam",
-      mPrice: "245.000 đ",
-      sale_price: "196.000 đ",
+      mName: "Nệm Tai Thỏ Cho Chó Mèo",
+      mPhotos:
+        "https://petstoresaigon.com/wp-content/uploads/2021/05/O1CN01O1AcOm1FDySZVBsx7_6000000000454-0-cib.jpg",
+      mManu: "ABC",
+      mOrigin: "ThaiLand",
+      mPrice: "",
+      sale_price: "100.000 đ",
       variant: [
-        { mVariantType: "Màu sắc", mVariantValue: "Đen" },
-        { mVariantType: "Kích cỡ", mVariantValue: "L" },
+        { mVariantType: "Màu sắc", mVariantValue: "Hồng" },
+        { mVariantType: "Kích cỡ", mVariantValue: "Nhỏ" },
       ],
-      mAvgRating: 5,
-      mQuantity: 2,
+      mAvgRating: 3,
+      mQuantity: 1,
     },
     {
       mName: "Túi Xách Chó Mèo Hình Dấu Chân",
-      mPhotos: [],
+      mPhotos:
+        "https://poodlestoresaigon.com/wp-content/uploads/2022/05/tui-dung-cho-hinh-dau-chan1-1.jpg",
       mManu: "PetBag",
       mOrigin: "VietNam",
-      mPrice: "250.000 đ",
-      sale_price: "200.000 đ",
+      mPrice: "500.000 đ",
+      sale_price: "390.000 đ",
       variant: [
-        { mVariantType: "Màu sắc", mVariantValue: "Trắng" },
-        { mVariantType: "Kích cỡ", mVariantValue: "S" },
+        { mVariantType: "Màu sắc", mVariantValue: "Hồng" },
+        { mVariantType: "Kích cỡ", mVariantValue: "Nhỏ" },
       ],
       mAvgRating: 4,
-      mQuantity: 1,
+      mQuantity: 2,
     },
   ]);
   return (
@@ -147,7 +148,7 @@ function CartDetail() {
                     Tạm tính
                   </div>
                   <div className="product-saleprice text-pink-100">
-                    592.000 đ
+                    880.000 đ
                   </div>
                 </div>
 
@@ -165,7 +166,7 @@ function CartDetail() {
                     Tổng cộng
                   </div>
                   <div className="product-saleprice text-pink-100">
-                    592.000 đ
+                    880.000 đ
                   </div>
                 </div>
               </div>
