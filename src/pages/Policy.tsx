@@ -8,7 +8,6 @@ export default function Policy() {
   return (
     <>
       <Header2 />
-      <Navigation />
 
       <Article />
 
