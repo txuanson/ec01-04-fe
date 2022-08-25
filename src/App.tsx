@@ -10,6 +10,7 @@ import ShoppingCart from "./pages/ShoppingCart";
 import CheckoutDetail from "./pages/CheckoutDetail";
 import AboutUs from "./pages/AboutUs";
 import Policy from "./pages/Policy";
+import UserAccount from "./pages/UserAccount";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/product-detail" element={<ProductDetail />} />
           <Route path="/shopping-cart" element={<ShoppingCart />} />
           <Route path="/checkout-detail" element={<CheckoutDetail />} />
+          <Route path="/account" element={<UserAccount />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/policy" element={<Policy />} />
         </Routes>

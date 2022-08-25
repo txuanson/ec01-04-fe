@@ -1524,3 +1524,184 @@
 .introduce-border {
   border: 3px solid #d9adad;
 }
+
+.user-account {
+  padding: 60px 0;
+  width: 1170px;
+}
+.user-profile {
+  width: 400px;
+  align-items: center;
+  padding: 30px;
+  height: fit-content;
+}
+.profile-avatar {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.profile-detail {
+  width: 340px;
+}
+.profile-dt-line {
+  width: inherit;
+}
+.profile-dt-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+}
+.profile-dt-content {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  width: 220px;
+  white-space: pre-line;
+  text-align: right;
+}
+.user-history {
+  width: 750px;
+  align-items: center;
+  padding: 25px;
+  gap: 25px;
+}
+.history-tab {
+  border-bottom: 1px solid #d1d1d1;
+  height: 30px;
+  width: 700px;
+}
+.history-tab-item {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+.history-tab-item:hover,
+.history-tab-item:focus {
+  border-bottom: 3px solid #d9adad;
+}
+.history-content {
+  width: 700px;
+  gap: 50px;
+}
+.history-order {
+  padding: 20px;
+  gap: 20px;
+}
+.history-product {
+  gap: 20px;
+}
+.history-product-line {
+  width: 660px;
+  border: 1px solid #d9adad33;
+}
+.history-info-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.history-info-content {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: pre-line;
+}
+.history-info-user {
+  gap: 13px;
+}
+.history-info-order {
+  gap: 8px;
+}
+.history-pd-it-img {
+  width: 75px;
+  height: 75px;
+}
+.history-pd-it-detail {
+  width: 550px;
+}
+.history-item-name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  width: inherit;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.history-item-name:hover {
+  text-decoration: underline;
+}
+.history-it-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.history-pd-saleprice {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.history-pd-costprice {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+.history-pd-total {
+  display: flex;
+  align-items: center;
+}
+.history-item-quantity {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.history-product-item {
+  align-items: center;
+}
+.history-total-product {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.history-total-money {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  align-items: flex-end;
+}
+.edit-profile-btn {
+  border: 2px solid #d9adad;
+  border-radius: 12px;
+  padding: 0 15px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+.edit-profile-btn:hover {
+  background: #d9adad;
+  color: #ffffff;
+}
