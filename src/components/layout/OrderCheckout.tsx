@@ -304,9 +304,9 @@ function OrderCheckout() {
                       </text>
                     </div>
 
-                    <button type="submit" className="default-btn-agree">
+                    <a href="/account" className="default-btn-agree">
                       HOÀN TẤT ĐẶT HÀNG
-                    </button>
+                    </a>
 
                     <div className="confirm-safety text-grey-100">
                       Chúng tôi sẽ gọi điện lại để xác nhận đơn hàng của quý
